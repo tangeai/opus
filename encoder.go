@@ -28,7 +28,7 @@ bridge_encoder_get_dtx(OpusEncoder *st, opus_int32 *dtx)
 int
 bridge_encoder_get_in_dtx(OpusEncoder *st, opus_int32 *in_dtx)
 {
-	return opus_encoder_ctl(st, OPUS_GET_IN_DTX(in_dtx));
+	return opus_encoder_ctl(st, OPUS_GET_DTX(in_dtx));
 }
 
 int
